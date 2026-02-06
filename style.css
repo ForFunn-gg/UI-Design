@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.3rem;
+    list-style: none;
+    padding: 1rem;
+    position: absolute;
+    right: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+.active{
+    position: absolute;
+    color: red;
+    top: 2rem;
+}
+
+#about{
+    position: absolute;
+    top: 4rem
+}
