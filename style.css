@@ -36,6 +36,8 @@ a{
     color: blue;
     top: 1rem;
     font-size: 2.5rem;
+    text-decoration: none;
+    left: 2.5rem
 }
 
 #about{
