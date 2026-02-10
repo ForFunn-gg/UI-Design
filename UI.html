@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -22,11 +23,11 @@
     </header>
 
     <main>
-        <section id  = "about" active>
+        <section id="about" active>
             <h1>Welcome to My Portfolio</h1>
             <p>This is a brief introduction about myself. I am passionate about web development and design.</p>
         </section>
-        <section class  = "projects-section">
+        <section id="projects-section">
              <h2>Project lists</h2>
                 <p>Here are some of my recent projects:</p>
                 <ul>
@@ -35,19 +36,22 @@
                     <li><a href="">Project3</a></li>
                     <li><a href="">Project4</a></li>
                 </ul>
-                <a href="projects-section" target="_blank"></a>
+    
         </section>
-        <section class = "skills-section">
+        <section id="skills-section">
             <h2>Skills</h2>
             <p>Here are some of my skills:</p>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
+                <li><i class="fa-brands fa-html5" style="color: #e34f26;"></i></li>
+                <li><i class="fa-brands fa-css" style="color: #264de4;"></i></li>
+                <li><i class="fa-brands fa-js" style="color: #f0db4f;"></i></li>
+                <li><i class="fa-brands fa-python" style="color: #3776ab;"></i></li>
+                <li><i class="fa-brands fa-react" style="color: #61dafb;"></i></li>
+                <li><i class="fa-brands fa-java" style="color: #f89820;"></i></li>
+                <li><i class="fa-brands fa-node" style="color: #339933;"></i></li>
             </ul>
         </section>
-        <section class = "contact-section">
+        <section id="contact-section">
             <h2>Just contact me</h2>
             <p>I'll provide my contact</p>
             <form>
@@ -59,8 +63,9 @@
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
                 <input type="submit" value="Submit">
             </form>
+
         </section>
-        <section class = "resume-section">
+        <section id="resume-section">
             <h2>Resume</h2>
            <div class ="resume-content">
 
@@ -74,11 +79,19 @@
             </div>
             </div>
            </div>
-           <a href="resume-section" target="_blank"></a>
+  
         </section>
     </main>
     <footer>
         <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+       <div class="social-media">
+          <a href="https://www.facebook.com/maronjake.dinopol.2024" target="_blankk">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/maron_14096275?igsh=MXNvbjZhMTd0b3Uxcw==" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+       </div> 
     </footer>
 </body>
 </html>
