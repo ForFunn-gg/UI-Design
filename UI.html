@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" style="size: 100%;">
 </head>
 <body>
+    <div class="container">
     <header>
-        <div>
-          <nav class = "navbar">
-            <li><a href="about" class = "active">About</a></li>
-            <ul class = "nav-links">
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li><a href="#resume-section">Resume</a></li>
-            </ul>
-        </nav>
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#resume-section">Resume</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
+    
     <main>
         <section id="about" active>
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a brief introduction about myself. I am passionate about web development and design.</p>
-        </section>
-        <section id="projects-section">
+          <spline-viewer loading-anim-type="none" url="https://prod.spline.design/98AyYD22X6Uqq785/scene.splinecode"></spline-viewer>
+        
              <h2>Project lists</h2>
                 <p>Here are some of my recent projects:</p>
                 <ul>
@@ -36,9 +34,9 @@
                     <li><a href="">Project3</a></li>
                     <li><a href="">Project4</a></li>
                 </ul>
-    
         </section>
         <section id="skills-section">
+            <div>
             <h2>Skills</h2>
             <p>Here are some of my skills:</p>
             <ul>
@@ -50,6 +48,10 @@
                 <li><i class="fa-brands fa-java" style="color: #f89820;"></i></li>
                 <li><i class="fa-brands fa-node" style="color: #339933;"></i></li>
             </ul>
+            </div>
+            <div>
+                
+            </div>
         </section>
         <section id="contact-section">
             <h2>Just contact me</h2>
@@ -81,6 +83,7 @@
            </div>
   
         </section>
+        
     </main>
     <footer>
         <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
@@ -93,5 +96,8 @@
           </a>
        </div> 
     </footer>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.51/build/spline-viewer.js"></script>
+
+
 </body>
 </html>

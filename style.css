@@ -5,130 +5,14 @@
 }
 
 header{
-    background-color: red;
-    height: 5rem;
-    width: 1600px;
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(241, 7, 7, 0.1);
-    width: 100%;
-    min-height: 600px;
-    margin: 0;
-    
-}
-.navbar{
-    position: relative;
-}
-.nav-links{
     display: flex;
-    justify-content: flex-end;
-    gap: 1.3rem;
-    list-style: none;
-    padding: 1rem;
     position: absolute;
-    right: 10rem;
     top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgba(227, 224, 224, 0.314);
+    backdrop-filter: blur(10px);
 }
-
-.nav-links a{
-    color: blue;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: blueviolet;
-}
-
-.active{
-    position: absolute;
-    color: blue;
-    top: 1rem;
-    font-size: 2.5rem;
-    text-decoration: none;
-    left: 2.5rem;
-   pointer-events: none;
-}
-
-#about{
-    position: absolute;
-    top: 5rem;
-    left: 2.5rem;
-}
-
-
-a:hover{
-    color: blue;
-}
-
-#projects-section{
-    position: absolute;
-    top: 15rem;
-    left: 2.5rem;
-}
-#projects-section h2{
-    color: blue;
-    font-size: 2rem;
-    
-}
-#projects-section ul li a{
-    color: blue;
-    font-size: 1.5rem;
-    padding: 0;
-    background-color: red;
-    position: absolute;
-    margin: 0;
-}
-
-#projects-section li{
-    margin-bottom: 50px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-#projects-section a{
-   text-decoration: none;
-}
-
-#skills-section{
-    position: absolute;
-    top: 35rem;
-    left: 2.5rem;
-}
-#skills-section li{
-    list-style: none;
-    margin: 2rem;
-    display: inline-block;
-    margin: 1.5rem;
-    font-size: 2rem;
-}
-#contact-section{
-    position: absolute;
-    top: 60rem;
-    left: 2.5rem;
-}
-#contact-section li{
-    list-style: none;
-    margin: 2rem;
-}
-
-#resume-section{
-    position: absolute;
-    top: 80rem;
-    left: 2.5rem;
-}
-
-footer{
-    background-color: red;
-    height: 5rem;
-    width: 1600px;
-    position: absolute;
-    top: 100rem;
-}
-
-.social-media{
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    font-size: 2rem;
-}
-
