@@ -1,26 +1,31 @@
+/* Base styles from original */
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding:  0;
+    box-sizing:  border-box;
 }
 
 header{
-    display: flex;
-    position: absolute;
+    display:  flex;
+    position:  absolute;
     top: 0;
-    right: 0;
+    right:  0;
     left: 0;
-    align-items: center;
-    justify-content: space-between;
+    align-items:    center;
+    justify-content:space-between;
     height: 100px;
-    background-color: rgba(227, 224, 224, 0.314);
-    backdrop-filter: blur(10px);
+    background-color:rgba(227, 224, 224, 0.314);
+    backdrop-filter:blur(10px);
     z-index: 9999;
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:  #333;
+    overflow-x: hidden;
 }
 
 
@@ -28,28 +33,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 10px 20px;
+    width:  100%;
+    padding:  10px 20px;
 }
 
 .logo img{
-    position: absolute;  
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    left: 0;
-    top: 0;
-    background-color: rgba(227, 224, 224, 0.314);
+    max-width: 100px;
+    height: auto;
 }
 
 .navbar ul{
-    position: absolute;
     list-style: none;
     display: flex;
     gap: 20px;
-    right: 20px;
-    top: 40px;
-
 }
 
 .navbar ul li{
@@ -57,7 +53,6 @@ body{
 }
 
 .navbar ul li a{
-    top: 50px;
     text-decoration: none;
     color: #333;
     font-size: 18px;
@@ -68,15 +63,69 @@ body{
     color: #007BFF;
 }
 
-/*Skills-section*/
+/*Container*/
+.container{
+    max-width: 1000px;
+    margin:  0 auto;
+    padding: 0 20px;
+}
 
-.skill-container{
+/*Section Titles*/
+.section-title,
+#skills-section h2,
+.contact-section h2,
+#resume-section h2{
+    text-align:    center;
+    font-size:     2.5rem;
+    margin-bottom: 30px;
+    color:         #333;
+}
+
+#skills-section,
+.contact-section,
+#resume-section{
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+/*about-section*/
+.about-section{
+    padding: 60px 25px;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+}
+
+.about-content{
     display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
     flex-wrap: wrap;
-    gap: 20px;
+}
+
+.about-image img{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text{
+    flex: 1;
+    min-width: 280px;
+}
+
+.hidden{
+    display: none;
+}
+
+/*Skills-section*/
+.skill-container{
+    display:  flex;
+    flex-wrap:  wrap;
+    gap:  20px;
     justify-content: center;
     padding: 20px;
-   
 }
 
 .skill-pill{
@@ -88,8 +137,9 @@ body{
     font-weight: 400;
     border: 1px solid #ddd;
     transition: all 0.3s ease;
-    cursor: default;
+    cursor:  default;
 }
+
 .skill-pill:hover{
     background-color: #e0e8f0;
     border-color: #ccc;
@@ -99,13 +149,16 @@ body{
 .skill-bar-wrapper{
     width: 100%;
     max-width: 500px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .skill-name{
     display: block;
-    margin-bottom: 10px;
-    font-size: bold;
+    margin-bottom:10px;
+    font-weight:bold;
 }
 
 .skill-bar{
@@ -113,51 +166,85 @@ body{
     height: 15px;
     background-color: #e0e0e0;
     border-radius: 10px;
-    overflow: hidden;
+    overflow:hidden;
 }
+
 .progress{
     height: 100%;
     background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
     border-radius: 10px;
-    width: 0;
-    transition: width 1ss ease-in-out;
+    width:  0;
+    transition: width 1s ease-in-out;
 }
 
 /*Project-section*/
-.project-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px;
-}
-.project-card{
+.project-title {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    align-items: center;
+    font-size: 40PX;
+}
+
+#projects-section{
+    padding: 60px 20px;
+    background-color:#f9f9f9;
+}
+
+.project-grid{
+    display:  grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:  30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card{
+    display: flex;
+    flex-direction:  column;
+    background-color:#fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
+    overflow:  hidden;
 }
 
 .project-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform:   translateY(-5px);
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .project-img{
     background-size: cover;
     height: 180px;
-    background-position: center;
+    background-position:center;
 }
 
-.project-content { padding: 20px;}
-.project-content h3{ margin: 0 0 10px; font-size: 20px;}
-.project-content p{ margin: 0; font-size: 16px; color: #666;}
-.project-tags{
-    margin: 15px 0;
+.project-content {
+    padding: 20px;
+    flex: 1;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
 }
+
+.project-content h3{
+    margin: 0 0 10px;
+    font-size:20px;
+}
+
+.project-content p{
+    margin:  0;
+    font-size:16px;
+    color:   #666;
+    flex: 1;
+}
+
+.project-tags{
+    margin:  15px 0;
+    display: flex;
+    gap:    10px;
+    flex-wrap: wrap;
+}
+
 .tags{
     background-color: #f0f4f8;
     padding: 5px 10px;
@@ -168,46 +255,268 @@ body{
 
 .btn{
     display: inline-block;
-    padding: 10px 20px;
+    padding:  10px 20px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #0056b3;
 }
 
 /*Contact-section*/
+#contact-section{
+    padding: 60px 20px;
+    background-color:#f9f9f9;
 
+}
 .contact-wrapper{
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
-    gap: 1rem;
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     background: #fff;
-    padding: 1.4rem;
+    padding: 2rem;
     border-radius: 2.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contact-form{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 1rem;
 }
 
-#contact-form input, #contact-form textarea{
+#contact-form input,
+#contact-form textarea{
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
-    font-size: 1rem;
-    font-family: sans-serif;
+    font-size:    1rem;
+    font-family:  sans-serif;
+    width: 100%;
 }
 
 #form-status {
     margin-top: .7rem;
     font-size: 0.9rem;
     color: #333;
-    font-weight: bold;
+    font-weight:bold;
 }
+
 .success-msg{
     color: green;
+}
+
+/*Resume Section*/
+#resume-section{
+    padding: 60px 20px;
+    background-color:#f9f9f9;
+}
+
+.resume-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Footer*/
+footer{
+    background-color:#333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 15px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a{
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover{
+    color: #007BFF;
+}
+
+/* ============================================
+   RESPONSIVE FIXES - MEDIA QUERIES
+   ============================================ */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image img {
+        width: 250px;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+        position: relative;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .navbar ul li {
+        margin-left: 0;
+    }
+    
+    .about-section {
+        margin-top: 0;
+        padding: 40px 20px;
+    }
+    
+    .about-image img {
+        width: 200px;
+    }
+    
+    .section-title,
+    #skills-section h2,
+    .contact-section h2,
+    #resume-section h2 {
+        font-size: 2rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 15px;
+    }
+    
+    .skill-bar-wrapper {
+        padding: 0 15px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 14px;
+    }
+    
+    .logo img {
+        max-width: 80px;
+    }
+    
+    .about-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    .section-title,
+    #skills-section h2,
+    .contact-section h2,
+    #resume-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-content h3 {
+        font-size: 18px;
+    }
+    
+    .project-content p {
+        font-size: 14px;
+    }
+    
+    .contact-wrapper {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 20px 15px;
+    }
+    
+    .social-media a {
+        font-size: 20px;
+    }
+    
+    .skill-pill {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    #skills-section,
+    .contact-section,
+    #resume-section {
+        padding: 40px 15px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 320px) {
+    .navbar ul {
+        gap: 10px;
+    }
+    
+    .about-image img {
+        width: 150px;
+    }
+    
+    .project-grid {
+        gap: 20px;
+    }
 }

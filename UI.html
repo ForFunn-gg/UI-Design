@@ -24,10 +24,24 @@
     </header>
     
     <main>
-        <section id="about" active>
-          <spline-viewer loading-anim-type="none" url="https://prod.spline.design/98AyYD22X6Uqq785/scene.splinecode"></spline-viewer>
-        
-             <h2 class="project-section">Project lists</h2>
+      <section id= "about" class= "about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
+                <img src="" alt="Profile Picture">
+            </div>
+               <div class="about-text">
+                <h1>Hi, I'm Jake Maronjake Dinopol</h1>
+                <p>I'm a passionate frontend developer with a strong background in HTML, CSS, and JavaScript.</p>
+                <button id="read-more-btn">Read My Story</button>
+                <p id="more-info" class="hidden">I started coding with simple HTML, CSS, JavaScript during a weekend project. Today, I build frontend project that turn ideas into user-friendly websites. My journey has been filled with challenges and triumphs, each one teaching me valuable lessons about perseverance and creativity in the world of web development.
+                </p>
+               </div> 
+          </div>
+        </div>
+      </section>
+         <section id="projects-section">
+             <h2 class="project-title">Project lists</h2>
 
         <div class="project-grid">
 
@@ -98,7 +112,7 @@
             </div>
             
         </section>
-        <section class="contact-section">
+        <section id="contact-section">
             <h2 class="section-title">Contact</h2>
            <div class="contact-wrapper">
             <div class="contact-info">
@@ -147,7 +161,7 @@
        </div> 
     </footer>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.51/build/spline-viewer.js"></script>
-
-
+    <script src="index.js" defer></script>
+    
 </body>
 </html>
