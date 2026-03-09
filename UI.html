@@ -25,32 +25,50 @@
     </header>
     
     <main>
+         
       <section id= "about" class= "about-section">
         <div class="container">
           <div class="about-content">
-            <div class="about-image">
-                <img src="/IMG/images.jpg" alt="Profile Picture">
+            <div class="about-image" data-tilt>
+                <div class="3d-card-inner">
+                    <img src="/IMG/images.jpg" alt="Profile Picture">
+                    <div class="3d-glow"></div>
+                </div>
             </div>
-               <div class="about-text">
-                <h1>Hi, I'm Jake Maronjake Dinopol</h1>
-                <p>I'm a passionate frontend developer with a strong background in HTML, CSS, and JavaScript.</p>
-                <button id="read-more-btn">Read My Story</button>
-                <p id="more-info" class="hidden">I started coding with simple HTML, CSS, JavaScript during a weekend project. Today, I build frontend project that turn ideas into user-friendly websites. My journey has been filled with challenges and triumphs, each one teaching me valuable lessons about perseverance and creativity in the world of web development.
-                </p>
+               <div class="about-text" data-tilt>
+                <div class="3d-card-inner">
+                    <h1 class="typing-effect">Hi, I'm Maron jake Dinopol</h1>
+                    <p>I'm a passionate frontend developer with a strong background in HTML, CSS, and JavaScript.</p>
+                    <button id="read-more-btn" class="3d-btn">Read My Story</button>
+                    <p id="more-info" class="hidden">I started coding with simple HTML, CSS, JavaScript during a weekend project. Today, I build frontend project that turn ideas into user-friendly websites. My journey has been filled with challenges and triumphs, each one teaching me valuable lessons about perseverance and creativity in the world of web development.
+                    </p>
+                </div>
                </div> 
           </div>
         </div>
       </section>
          <section id="projects-section">
-             <h2 class="project-title">Project lists</h2>
+             <h2 class="section-title">Project Lists</h2>
 
         <div class="project-grid">
 
-          <div class="project-card">
-            <div class="project-img" style="background-image: url('IMG/img1.png');"></div>
+          <div class="project-card" data-tilt>
+            <div class="project-carousel">
+                <div class="carousel-images">
+                    <div class="carousel-img active" style="background-image: url('IMG/img1.png');"></div>
+                    <div class="carousel-img" style="background-image: url('IMG/img2.png');"></div>
+                    <div class="carousel-img" style="background-image: url('IMG/img3.png');"></div>
+                    <div class="carousel-img" style="background-image: url('IMG/img4.png');"></div>
+                    <div class="carousel-img" style="background-image: url('IMG/img5.png');"></div>
+                </div>
+                <button class="carousel-arrow carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-arrow carousel-next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+                <div class="carousel-counter"><span class="current-img">1</span> / <span class="total-img">5</span></div>
+            </div>
             <div class="project-content">
-                <h3>Furniture Design</h3>
-                <p>Created a furniture design using Figma, showcasing my skills in design.</p>
+                <h3 style="color: whitesmoke;">Furniture Design</h3>
+                <p style="color: whitesmoke;">Created a furniture design using Figma, showcasing my skills in design.</p>
                 <div class="project-tags">
                   <span class="tags">react.js</span>
                   <span class="tags">TypeScript</span>
@@ -62,7 +80,14 @@
             <div id="project-modal" class="modal">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <img id="modal-img" src="" alt="Project Image">
+        <div class="modal-carousel">
+            <div class="modal-carousel-images">
+                <img class="modal-carousel-img active" id="modal-img" src="" alt="Project Image">
+            </div>
+            <button class="modal-carousel-arrow modal-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="modal-carousel-arrow modal-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="modal-carousel-dots"></div>
+        </div>
         <h3 id="modal-title"></h3>
         <p id="modal-desc"></p>
     </div>
@@ -70,7 +95,7 @@
                
         </section>
         <section id="skills-section">
-            <h2>Skills</h2>
+            <h2 class="section-title">Skills</h2>
             <div class="skill-container">
                 <span class="skill-pill">HTML</span>
                 <span class="skill-pill">CSS</span>
@@ -126,9 +151,9 @@
             <h2 class="section-title">Contact</h2>
            <div class="contact-wrapper">
             <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Email: dmaronjake@gmail.com</p>
-                <p>Location: Cebu City, Philippine</p>
+                <h3 style="color: whitesmoke;">Contact Information</h3>
+                <p style="color: whitesmoke;">Email: dmaronjake@gmail.com</p>
+                <p style="color: whitesmoke;">Location: Cebu City, Philippine</p>
             </div>
 
             <form id="contact-form">
@@ -142,7 +167,7 @@
 
         </section>
         <section id="resume-section">
-            <h2>Resume</h2>
+            <h2 class="section-title">Resume</h2>
            <div class ="resume-content">
 
             <div class = "Certifications">
